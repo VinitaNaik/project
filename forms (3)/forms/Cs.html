@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cultural Secretary Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="main1.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<h1>Cultural Secretary Form</h1>
+			<form action="#" method="post">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+					<label for="rollno">Roll No:</label>
+					<input type="text" id="rollno" name="rollno" required>
+				</div>
+				<div class="form-group">
+					<label for="class">Class:</label>
+					<select id="class" name="class" required>
+						<option value="">-- Select Class --</option>
+						<option value="1">FYBCA</option>
+						<option value="2">SYBCA</option>
+						<option value="3">TYBCA</option>
+					</select>
+					<label for="division">Division:</label>
+					<input type="text" id="division" name="division" required>
+				</div>
+				<div class="form-group">
+					<label for="semester">Semester:</label>
+					<input type="text" id="semester" name="semester" required>
+					<label for="dob">Date of Birth:</label>
+					<input type="date" id="dob" name="dob" required>
+				</div>
+				<div class="form-group">
+					<label for="fees">Fees Paid:</label>
+					<select id="fees" name="fees" required>
+						<option value="">-- Select Option --</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="fees">Gender:</label>
+					<select id="fees" name="fees" required>
+						<option value="">-- Select Option --</option>
+						<option value="yes">Male</option>
+						<option value="no">Female</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="bc">Birth Certificate:</label>
+					<input type="file" id="bc" name="bc" accept="image/*,.pdf" required>
+					<label for="result">Result:</label>
+					<input type="file" id="result" name="result" accept="image/*,.pdf" required>
+				</div>
+				<div class="form-group">
+					<label for="receipt">Fees Receipt:</label>
+					<input type="file" id="receipt" name="receipt" accept="image/*,.pdf" required>
+					<label for="idcard">Identity Card:</label>
+					<input type="file" id="idcard" name="idcard" accept="image/*,.pdf" required>
+				</div>
+				<a href="#">
+				<input type="submit" value="Next" class="submit-button">
+			    </a>
+			</form>
+		</div>
+	</main>
+	
+    <script src="gs.js"></script>
+</body>
+</html>

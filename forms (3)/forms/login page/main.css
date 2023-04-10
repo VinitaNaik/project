@@ -1,0 +1,336 @@
+
+/* CSS for Hover Me Dropdown */
+body, image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: bg 10s linear infinite;
+ }
+ @keyframes bg {
+ 
+ 0% {
+  background-image: url("./mesmain.jpg");
+ }
+ 70% {
+  background-image: url("./mesmain2.jpg");
+ }
+ 100% {
+ background-image: url("./mesmain3.jpg");
+ }
+ 
+ }
+ .logout{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 33px;
+}
+
+ .home-page {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100vh;
+  width: 100vw;
+ 
+  
+
+
+ }
+
+
+ 
+ .account-box {
+  height: 80vh;
+  width: 300px;
+  border-radius: 15px;
+  border: 0.1px solid rgba(100,100,100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--indigo);
+ }
+ header {
+  width: 30vw;
+  max-height: 15%;
+  display: flex;
+  justify-content: center;
+ }
+ #logo {
+  height: 100%;
+  width: auto;
+ }
+ ul {
+  list-style-type: none;
+  text-decoration: none;
+ }
+ li {
+  padding: 3px;
+  border-radius: 15px;
+  border: 1px solid var(--black);
+  line-height: 1.5em;
+  margin-left: -30px;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  color: var(--black);
+  width: 18vw;
+ }
+ input {
+  background: var(--indigo);
+  border: none;
+ }
+ input[type="text"], input[type="password"] {
+  color: var(--black);
+  font-size: 1em;
+ }
+ input::placeholder {
+  color: var(--black);
+  font-size: 1em;
+ }
+ input:focus, textarea:focus, select:focus {
+  outline: none;
+ }
+ .sign-up {
+  background: var(--black);
+  color: var(--font-color);
+  text-align: center;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all .3s ease;
+ }
+ .sign-up:hover {
+  background: var(--font-color);
+  color: var(--black);
+  cursor: pointer;
+ }
+ .icon-wrapper {
+  width: 165px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row; 
+ }
+ .icon-wrapper>img { 
+ height: 30px;
+  width: 18%;
+  margin: 7px;
+ }
+ @media screen and (max-width:600px) {
+  .account-box {
+  min-width: 80%;
+  height: 75vh;
+ }
+ li {
+  width: 45vw;
+ }
+ 
+ }
+ 
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.title {
+  display: flex;
+/*   border:1px solid red; */
+  height: 120%;
+  align-items: top 10%;
+}
+
+svg {
+    
+    font: 5.5em 'Student Council Voting';
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+  
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  top:-650px;
+
+  }
+
+  
+  .dropbox{
+   background-color: bisque;
+   height:2rem;
+   text-size-adjust:20px;
+
+  }
+
+ 
+  .dropbtn {
+    width: 20rem;
+    height: 100%;
+    --r-globalnav-duration-medium: .24s;
+    min-width: 100px;
+  min-height: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgb(139, 151, 216) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 10px; height: 10px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+  
+ 
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 58px;
+    z-index: 5;
+    width: 20rem;
+    background-image: linear-gradient(to bottom, #5592bb, #293136);
+
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  footer {
+    height: min-content;
+    background-color: #000000;
+    color: #fffcfc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
